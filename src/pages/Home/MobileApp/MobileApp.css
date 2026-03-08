@@ -1,0 +1,143 @@
+.mobile-app {
+  padding: 6rem 2rem;
+  background-color: #f9fafb; /* Very light gray/off-white background */
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-app-container {
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+.mobile-app-content {
+  flex: 1;
+  max-width: 650px;
+}
+
+.mobile-app-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.mobile-app-subtitle {
+  font-size: 1.125rem;
+  color: #4b5563;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.mobile-app-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 3rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.mobile-app-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  font-size: 1rem;
+  color: #374151;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.feature-list-icon {
+  flex-shrink: 0;
+  background-color: #FEF3C7;
+  border-radius: 6px;
+  padding: 4px; /* Simulating the small background glow behind icons in the screenshot */
+  width: 24px;
+  height: 24px;
+}
+
+.app-store-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-store {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  color: #111827;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 160px;
+}
+
+.btn-store:hover {
+  background-color: #ffffff;
+  border-color: #d1d5db;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.store-icon {
+  color: #374151;
+}
+
+.mobile-app-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-app-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-10px); /* Slight float effect */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .mobile-app-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .mobile-app-image-wrapper {
+    order: -1; /* Move image to top on smaller screens */
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .mobile-app-content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .app-store-buttons {
+    flex-direction: column;
+  }
+  
+  .btn-store {
+    width: 100%;
+  }
+
+  .mobile-app-title {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,114 @@
+.tms-page-container {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #ffffff;
+  min-height: calc(100vh - 80px);
+  /* Removed flex centering so multiple sections can flow normally vertically */
+}
+
+.tms-hero {
+  padding: 4rem 2rem;
+  width: 100%;
+}
+
+.tms-hero-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tms-logo {
+  font-size: 4rem;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  margin-bottom: 2rem;
+  line-height: 1;
+}
+
+.logo-pro {
+  color: #111827;
+}
+
+.logo-trux {
+  color: #3b82f6; /* A clean, tech-focused blue based on the image */
+}
+
+.tms-badge {
+  background-color: #f3f4f6;
+  color: #374151;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px; /* Pill shape */
+  letter-spacing: 0.02em;
+  margin-bottom: 2rem;
+  border: 1px solid #e5e7eb;
+}
+
+.tms-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin: 0 0 1.5rem 0;
+  max-width: 700px;
+}
+
+.tms-subtitle {
+  font-size: 1.125rem;
+  color: #6b7280;
+  line-height: 1.6;
+  max-width: 650px;
+  margin: 0 0 2.5rem 0;
+}
+
+.btn-tms-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #F59E0B; /* Primary Amber */
+  color: #111827; /* Dark text */
+  padding: 0.875rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  margin-bottom: 1.5rem;
+}
+
+.btn-tms-primary:hover {
+  background-color: #fbbf24;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(245, 158, 11, 0.4);
+}
+
+.tms-footer-text {
+  font-size: 0.85rem;
+  color: #9ca3af;
+  margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .tms-logo {
+    font-size: 3rem;
+  }
+  
+  .tms-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .tms-title {
+    font-size: 2rem;
+  }
+  
+  .tms-subtitle {
+    font-size: 1rem;
+  }
+}

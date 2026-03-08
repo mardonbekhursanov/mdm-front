@@ -1,0 +1,52 @@
+.about-cta {
+  padding: 8rem 2rem;
+  background-color: #ffffff;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  text-align: center;
+}
+
+.about-cta-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-cta-title {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+}
+
+.about-cta-subtitle {
+  font-size: 1.125rem;
+  color: #6b7280;
+  margin-bottom: 3rem;
+}
+
+.btn-about-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: #F59E0B;
+  color: #111827;
+  padding: 1rem 2.5rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-about-cta:hover {
+  background-color: #fbbf24;
+  transform: translateY(-2.5px);
+  box-shadow: 0 10px 15px -3px rgba(245, 158, 11, 0.4);
+}
+
+@media (max-width: 640px) {
+  .about-cta-title {
+    font-size: 2rem;
+  }
+}

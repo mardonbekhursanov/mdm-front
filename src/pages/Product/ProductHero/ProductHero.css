@@ -1,0 +1,65 @@
+.product-hero {
+  padding: 8rem 2rem 6rem; /* Extra top padding to account for fixed navbar if needed */
+  background-color: #ffffff;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.product-hero-container {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.product-hero-subtitle {
+  font-size: 1.125rem;
+  color: #6b7280;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+  max-width: 700px;
+}
+
+.btn-product-hero {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #F59E0B; /* Primary Amber */
+  color: #111827; /* Dark text */
+  padding: 0.875rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-product-hero:hover {
+  background-color: #fbbf24; /* Lighter Amber on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(245, 158, 11, 0.4);
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .product-hero {
+    padding: 6rem 1.5rem 4rem;
+  }
+  
+  .product-hero-title {
+    font-size: 2.25rem;
+  }
+}

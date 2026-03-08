@@ -1,0 +1,109 @@
+.how-it-works {
+  padding: 6rem 2rem;
+  background-color: #ffffff;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.how-it-works-container {
+  max-width: 1280px;
+  width: 100%;
+}
+
+.how-it-works-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.how-it-works-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.how-it-works-subtitle {
+  font-size: 1.125rem;
+  color: #6b7280;
+}
+
+.how-it-works-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  position: relative;
+}
+
+/* Optional connecting line running behind the numbers */
+.how-it-works-grid::before {
+  content: '';
+  position: absolute;
+  top: 30px; /* Half of circle height */
+  left: 12.5%; /* Center of first col */
+  right: 12.5%; /* Center of last col */
+  height: 2px;
+  background-color: #f3f4f6;
+  z-index: 0;
+  display: none; /* Hidden by default, enable on larger screens if desired */
+}
+
+.step-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1; /* Keep above connecting line */
+}
+
+.step-number-circle {
+  width: 60px;
+  height: 60px;
+  background-color: #F59E0B; /* Primary Amber */
+  color: #111827; /* Dark text */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(245, 158, 11, 0.4);
+}
+
+.step-card-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 1rem 0;
+}
+
+.step-card-desc {
+  font-size: 0.95rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive Layout */
+@media (min-width: 1025px) {
+  .how-it-works-grid::before {
+    display: block;
+  }
+}
+
+@media (max-width: 1024px) {
+  .how-it-works-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .how-it-works-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}

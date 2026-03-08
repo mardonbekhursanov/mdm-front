@@ -1,0 +1,90 @@
+.product-cta-section {
+  padding: 6rem 2rem 8rem;
+  background-color: #ffffff; /* White background for this specific CTA */
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-top: 1px solid #e5e7eb; /* Optional separator if coming from white section */
+}
+
+.product-cta-container {
+  max-width: 800px;
+  width: 100%;
+}
+
+.product-cta-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.product-cta-subtitle {
+  font-size: 1.125rem;
+  color: #6b7280;
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.6;
+}
+
+.product-cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-product-cta-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #F59E0B; /* Primary Amber */
+  color: #111827; /* Dark text */
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-product-cta-primary:hover {
+  background-color: #fbbf24;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(245, 158, 11, 0.4);
+}
+
+.btn-product-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  background-color: #ffffff;
+  color: #374151; /* Dark gray text */
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid #d1d5db; /* Gray border */
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-product-cta-secondary:hover {
+  background-color: #f9fafb;
+  border-color: #9ca3af;
+  color: #111827;
+  transform: translateY(-2px);
+}
+
+/* Responsive Layout */
+@media (max-width: 640px) {
+  .product-cta-title {
+    font-size: 2rem;
+  }
+  
+  .product-cta-buttons {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+}

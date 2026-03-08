@@ -1,0 +1,82 @@
+.partners {
+  padding: 3rem 0; /* Removed horizontal padding to allow full bleed edge-to-edge scroll */
+  background-color: #fafafa;
+  border-bottom: 1px solid #e5e7eb;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow: hidden; /* Hide anything outside the container */
+}
+
+.partners-container {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.partners-title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #6b7280;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+  padding: 0 2rem;
+}
+
+.partners-carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  /* Optional fade edges for effect */
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.partners-track {
+  display: flex;
+  align-items: center;
+  width: max-content; /* Ensure track takes up space for all items */
+  gap: 4rem; /* Spacing between logos */
+  padding: 0 2rem;
+  animation: scroll 30s linear infinite;
+  opacity: 0.6;
+  filter: grayscale(100%);
+  transition: opacity 0.3s ease;
+}
+
+.partners-track:hover {
+  animation-play-state: paused;
+  opacity: 0.8;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Translate left by half the width since we duplicated the items */
+    transform: translateX(calc(-50% - 2rem)); 
+  }
+}
+
+.logo-placeholder {
+  font-weight: 800;
+  color: #374151;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  line-height: 1.1;
+  text-align: left;
+  white-space: nowrap; /* Prevent breaking lines on logos */
+}
+
+.logo-placeholder small {
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.icon-fake {
+  font-size: 1.5rem;
+}

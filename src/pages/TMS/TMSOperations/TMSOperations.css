@@ -1,0 +1,95 @@
+.tms-operations {
+  padding: 4rem 2rem 6rem;
+  background-color: #ffffff;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.tms-operations-container {
+  max-width: 1000px; /* Slightly narrower to match mockup */
+  width: 100%;
+}
+
+.tms-operations-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.tms-operations-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.tms-operations-subtitle {
+  font-size: 1.125rem;
+  color: #6b7280;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.tms-operations-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.tms-op-card {
+  background-color: #f9fafb; /* Light gray to match image */
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tms-op-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+  background-color: #ffffff;
+  border-color: #e5e7eb;
+}
+
+.tms-op-icon {
+  background-color: #e5e7eb; /* Darker gray background for icon */
+  color: #4b5563; /* Dark gray icon color */
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.tms-op-card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 0.75rem 0;
+  letter-spacing: -0.01em;
+}
+
+.tms-op-card-desc {
+  font-size: 0.95rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .tms-operations-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .tms-operations-title {
+    font-size: 2rem;
+  }
+}

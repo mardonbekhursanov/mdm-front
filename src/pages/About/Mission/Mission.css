@@ -1,0 +1,102 @@
+.mission-section {
+  padding: 8rem 2rem;
+  background-color: #ffffff;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.mission-container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.mission-left {
+  flex: 1;
+}
+
+.mission-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.02em;
+  margin-bottom: 2rem;
+}
+
+.mission-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.mission-text p {
+  font-size: 1.1rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.mission-right {
+  flex: 1;
+}
+
+.mission-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.mission-card {
+  background-color: #FFFBEB; /* Very light amber */
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.mission-card.wide {
+  grid-column: span 2;
+}
+
+.mission-card-icon {
+  margin-bottom: 1rem;
+}
+
+.mission-card-value {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 0.25rem;
+}
+
+.mission-card-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+@media (max-width: 1024px) {
+  .mission-container {
+    flex-direction: column;
+    gap: 4rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .mission-title {
+    font-size: 2rem;
+  }
+  
+  .mission-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .mission-card.wide {
+    grid-column: span 1;
+  }
+}

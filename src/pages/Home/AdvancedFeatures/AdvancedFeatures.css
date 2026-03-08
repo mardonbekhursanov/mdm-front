@@ -1,0 +1,111 @@
+.adv-features {
+  padding: 6rem 2rem;
+  background-color: #ffffff; /* White background based on image */
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.adv-features-container {
+  max-width: 1280px;
+  width: 100%;
+}
+
+.adv-features-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.adv-features-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #111827;
+  letter-spacing: -0.02em;
+  margin-bottom: 1rem;
+}
+
+.adv-features-subtitle {
+  font-size: 1.125rem;
+  color: #6b7280;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.adv-features-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.adv-feature-item {
+  display: flex;
+  flex-direction: row; /* Align icon and text horizontally */
+  align-items: flex-start;
+  gap: 1.25rem;
+  flex: 1;
+}
+
+.adv-feature-icon {
+  background-color: #FFFBEB; /* Very light amber background */
+  min-width: 44px; /* Fixed width for icon container to prevent shrinking */
+  height: 44px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; /* Important: prevents icon from squishing when text wraps */
+}
+
+.adv-feature-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.adv-feature-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.adv-feature-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.75rem;
+  margin-top: 0;
+  letter-spacing: -0.01em;
+}
+
+.adv-feature-desc {
+  font-size: 0.9rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsive Layout */
+@media (max-width: 1024px) {
+  .adv-features-list {
+    flex-wrap: wrap;
+    gap: 2.5rem;
+  }
+  
+  .adv-feature-item {
+    flex-basis: calc(50% - 1.25rem); /* 2 columns on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .adv-features-list {
+    flex-direction: column; /* 1 column on small screens */
+  }
+  
+  .adv-feature-item {
+    flex-basis: 100%;
+  }
+  
+  .adv-features-title {
+    font-size: 2rem;
+  }
+}
