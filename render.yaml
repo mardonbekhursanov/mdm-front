@@ -1,3 +1,4 @@
+git add render.yaml
 services:
   - type: static
     name: mdm-front
